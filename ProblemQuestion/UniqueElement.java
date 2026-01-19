@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class UniqueElement {
     public static void main(String[] args) {
-        int [] a = { 1,2,3,4,5,6,7,3,1,2,5,6,4,7,15};
+        int [] a = { 1,2,3,4,5,6,7,3,1,2,5,6,4,7,15,21};
         UniqueElement un = new UniqueElement();
         un.uniqueelementarray(a);
     }
@@ -25,7 +25,7 @@ public class UniqueElement {
                 continue;
             }else{
                 System.out.println("Here is the Unique element from Array");
-                System.out.print( b + " ");
+                System.out.println( b + " ");
             }
         }
     }
