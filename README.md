@@ -316,6 +316,68 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
         }
     }
 
+# Static Keyword : 
+The static keyword in Java is used to create class-level members that can be accessed without creating an object and are shared among all instances of the class.
+
+    Why is main() static? ---> ✔ JVM must call it without creating an object
+    Can we override static methods? ---> NO (method hiding)
+    Can we overload static methods? ---> ✔ YES
+
+    | Restriction                        | Reason                 |
+    | ---------------------------------- | ---------------------- |
+    | Cannot access non-static variables | They belong to objects |
+    | Cannot use `this` keyword          | No object reference    |
+    | Cannot override static methods     | Method hiding happens  |
+
+    Static Block : 
+        - Used to initialize static variables
+        - Executes only once when class is loaded
+        - Runs before main()
+
+        class Test {
+            static int age;
+
+            static {
+                age = 23;
+                System.out.println("Static block executed");
+            }
+
+            public static void main(String[] args) {
+                System.out.println(age);
+            }
+        }
+
+    Static Method (Class Method) : 
+
+        - Can be called using class name
+        - Can access only static data
+        - Cannot use this or super
+
+        class MathUtil {
+            static int add(int a, int b) {
+                return a + b;
+            }
+        }
+
+        int sum = MathUtil.add(10, 20);
+
+
+    The static can be:
+        a. Variable (also known as a class variable): 
+            if we declare a variable static, all objects of the class share the same static variable.
+        b. Method (also known as a class method): 
+            we can invoke static methods directly using the class name.
+        c. Block: 
+            static blocks are used to initialize the static variables.
+            
+            i. // static variable: static int age;
+            ii. // static block: static {age =23; }
+        
+        d. Nested class
+
+
+
+
 
 # Class 
 A class in Java is a blueprint or template for creating objects. It is a fundamental component of the object-oriented programming (OOP) model, defining the structure and behavior that all objects of that class will share. 
@@ -499,9 +561,96 @@ Static, Final, Abstract, Concrete and Singleton Class.
 
 
 # Methods : 
+        A method in Java is a block of code that:
+
+        - Performs a specific task
+        - Runs only when it is called
+        - Helps in code reusability, readability, and maintainability
+
+        Methods represent the behavior of an object or class.
+
+        Why Do We Need Methods?
+            ✔ Avoid code duplication
+            ✔ Improve modularity
+            ✔ Easy debugging & testing
+            ✔ Better readability
+
+        Syntex : 
+
+        access_modifier return_type method_name(parameter_list) {
+            //method body
+        }
+
+        access_modifier  ---> public, private, protected
+        return_type ---> void, int, string etc
+        method_name ---> any relevant name
+        parameter_list ---> whatever parameter it is going to take
+
+
+    Types of Methods : 
+
+    1. Predefined (Built-in) Methods :
+        Methods provided by Java API.
+
+        System.out.println("Hello");
+        Math.sqrt(16);
+        array.length;
 
 
 
+    2.User-Defined Methods : 
+        Methods created by programmers.
+
+        void greet() {
+            System.out.println("Welcome");
+        }
+
+
+    3. Static Methods : 
+
+        - Declared using static
+        - Called using class name
+        - Cannot use this
+
+        static void display() {
+            System.out.println("Static method");
+        }
+
+    4. Instance Methods (Non-Static) : 
+
+        - Belong to object
+        - Need object to call
+
+        void show() {
+            System.out.println("Instance method");
+        }
+
+        obj.show();
+
+        
+    Method Overloading (Compile-Time Polymorphism) : 
+
+        Same method name, different parameters.
+
+        int add(int a, int b) {
+            return a + b;
+        }
+
+        int add(int a, int b, int c) {
+            return a + b + c;
+        }
+
+    Method Overriding (Runtime Polymorphism) : 
+
+        Same method name & signature in child class.
+
+        class Parent {
+            void show() {}
+        }
+
+        class Child extends Parent {
+            void show() {}
+        }
 
 
 
