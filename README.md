@@ -1,85 +1,83 @@
 # PracticeMode404
 
 
-JAVA Notes
+# JAVA Notes
 
-Author Name : SIKANDER
-Date : 14 Dec 2025
-Reson for Code : Java Selenium Learning
-What Code will do : Stong the Conecpt of Java Selenium Automation
-
+    @Author Name : - [@AbdulxSikandar](https://github.com/AbdulxSikandar)
+    Reson for Code : Learning
+    What Code will do : Stong the Conecpt of Java 
 
 
-JAVA
-1991 -- Sun Microsystem,USA   / James Gosling
+    JAVA
+    1991 -- Sun Microsystem,USA   / James Gosling
 
-Purly Object Oriented Language
+    Purly Object Oriented Language
 
-Source Code-----> Complied to ---> Byte Code ----> Interpreted ----> Machine Code
+    Source Code-----> Complied to ---> Byte Code ----> Interpreted ----> Machine Code
 
-Class & Object
-Inheritence
-Polymorphisim
-Abstruction
-Encapculation
+    Class & Object
+    Inheritence
+    Polymorphisim
+    Abstruction
+    Encapculation
 
-Platform Independent
+    Platform Independent
 
-Primitive Data type and Non Premitive Data type
+    Primitive Data type and Non Premitive Data type
 
-byte --> Short -> int --> Long --> float --> double---> boolean   ||  char
-Size    2 byte    4 byte   8 byte  4 byte      8byte
+    byte --> Short -> int --> Long --> float --> double---> boolean   ||  char
+    Size    2 byte    4 byte   8 byte  4 byte      8byte
 
-String[] args ---> JVM Standard to pass Arguments and It takes arguments as String
-int[] args -- > x incorrect why of passing argument by commend line argument
+    String[] args ---> JVM Standard to pass Arguments and It takes arguments as String
+    int[] args -- > x incorrect why of passing argument by commend line argument
 
 
-String [] args -- ok
-String args [] -- ok
+    String [] args -- ok
+    String args [] -- ok
 
-Simple Language : User friendly Syntex
-High Level Language : Plan text / User understandable code
-Platform Independent: Once wrote the code then it can be executed on any plateform like machine/mac/linux/windows  (JVM of any plateform)
-Interpreted ---> byte code is interpreted into machine code
+    Simple Language : User friendly Syntex
+    High Level Language : Plan text / User understandable code
+    Platform Independent: Once wrote the code then it can be executed on any plateform like machine/mac/linux/windows  (JVM of any plateform)
+    Interpreted ---> byte code is interpreted into machine code
 
 
 
-Before creating any program, JDK must be properly installed in our system.
-Write a Program on any IDE/Text Editor.
-To compile the code, Java compiler (Javac) must run.
-It will create a test.class file which contains byte code of the Program.
-then we need Interpreter to run the code and JVM helps in that.
+    Before creating any program, JDK must be properly installed in our system.
+    Write a Program on any IDE/Text Editor.
+    To compile the code, Java compiler (Javac) must run.
+    It will create a test.class file which contains byte code of the Program.
+    then we need Interpreter to run the code and JVM helps in that.
 
-Every oprating system has different JVM.
+    Every oprating system has different JVM.
 
-JDK ---> JRE + JVM + Compiler + Java Docs + Java Debuggers
+    JDK ---> JRE + JVM + Compiler + Java Docs + Java Debuggers
 
-JRE ---> JVM + Applet + browser
+    JRE ---> JVM + Applet + browser
 
-JVM -- - > Virtual Machine + Garbage collector.
-
-
-# Java Doesn't support muliple Inheritence but can be achieved by interfaces. 
-# Java doesn't suppot Pointrt.
+    JVM -- - > Virtual Machine + Garbage collector.
 
 
-
-Java Variables : 
-
-1. Local Variable
-2. Instance Variable
-3. Static Variable
+    # Java Doesn't support muliple Inheritence but can be achieved by interfaces. 
+    # Java doesn't suppot Pointrt.
 
 
-Local Variable : Defined inside of a method/function
-    # can only be used inside the method where it is defined.
-    # Can not be defined with Static keyword. / Static keyword can not be used with Local variable.
+
+    Java Variables : 
+
+    1. Local Variable
+    2. Instance Variable
+    3. Static Variable
 
 
-Instance Vaiable : Declared outside the method and Inside a class.
+    Local Variable : Defined inside of a method/function
+        # can only be used inside the method where it is defined.
+        # Can not be defined with Static keyword. / Static keyword can not be used with Local variable.
 
-Static Variable : Declared with static keyword. ( It can not be local variable.)
-        #Memory allocation for static variable happens only once when the class is loaded in the memory.
+
+    Instance Vaiable : Declared outside the method and Inside a class.
+
+    Static Variable : Declared with static keyword. ( It can not be local variable.)
+            #Memory allocation for static variable happens only once when the class is loaded in the memory.
 
 
 
@@ -87,10 +85,10 @@ Static Variable : Declared with static keyword. ( It can not be local variable.)
 
         Data Type   Identifier       Literal
 
-# Identifier ==> Name of variable/method/class/package/constant
-# Literal ==> Values of Variable/constant
+    # Identifier ==> Name of variable/method/class/package/constant
+    # Literal ==> Values of Variable/constant
 
-Reserved words : some words are reserved in java which can not be as identifier. (Static, Void, Final, Finally, Main etc)
+    Reserved words : some words are reserved in java which can not be as identifier. (Static, Void, Final, Finally, Main etc)
 
 
 
@@ -113,7 +111,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
                 int x = 14;
                 double y = x;
      
-# Java Control Statements :
+## Java Control Statements :
     Java complier excute code from top to bottom and execute according to the order they appear.
 
     1. Decision Making Statement:
@@ -223,7 +221,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
 
 
 
-# Final Keyword : 
+## Final Keyword : 
     1. Final Variable :
         After initialization, cannot be modified or updated
         final int x = 5;
@@ -273,7 +271,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
         p.age = 30;   // ✅ Allowed
 
 
-# This Keyword : 
+## This Keyword : 
     - The this keyword refers to the current object and is used to access instance variables and methods. It cannot be used in static context.
 
     public class this_class {  
@@ -316,7 +314,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
         }
     }
 
-# Static Keyword : 
+## Static Keyword : 
 The static keyword in Java is used to create class-level members that can be accessed without creating an object and are shared among all instances of the class.
 
     Why is main() static? ---> ✔ JVM must call it without creating an object
@@ -379,7 +377,7 @@ The static keyword in Java is used to create class-level members that can be acc
 
 
 
-# Class 
+## Class 
 A class in Java is a blueprint or template for creating objects. It is a fundamental component of the object-oriented programming (OOP) model, defining the structure and behavior that all objects of that class will share. 
 Static, Final, Abstract, Concrete and Singleton Class.
 
@@ -440,7 +438,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
     }
 
 
-# Object :
+## Object :
     In Java, an object is an instance of a class.
 
     Example
@@ -458,7 +456,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
 
 
 
-# Constructor :
+## Constructor :
     A constructor is a special method used to initialize objects in Java.
     Key Characteristics
         - Constructor name = Class name
@@ -560,7 +558,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
         }
 
 
-# Methods : 
+## Methods : 
         A method in Java is a block of code that:
 
         - Performs a specific task
@@ -627,7 +625,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
 
         obj.show();
 
-        
+
     Method Overloading (Compile-Time Polymorphism) : 
 
         Same method name, different parameters.
@@ -651,6 +649,172 @@ Static, Final, Abstract, Concrete and Singleton Class.
         class Child extends Parent {
             void show() {}
         }
+
+
+    Accessor Method (Getter) : 
+        An accessor method is used to:
+            - Read / access the value of instance variables
+            - Not modify the data
+            - Commonly called Getter methods
+
+        Characteristics
+
+            ✔ Usually public
+            ✔ Has a return type
+            ✔ Does not change object state
+            ✔ Follows naming convention: getVariableName()
+
+        Example :
+        class Student {
+            private int age;
+
+            public int getAge() {   // Accessor
+                return age;
+            }
+        }
+
+
+    Mutator Method (Setter) : 
+        A mutator method is used to:
+
+            Modify / update the value of instance variables
+            Commonly called Setter methods
+
+        Characteristics :
+
+            ✔ Usually public
+            ✔ Return type is usually void
+            ✔ Accepts parameters
+            ✔ Follows naming convention: setVariableName()
+
+        Example :
+        class Student {
+            private int age;
+
+            public void setAge(int age) {  // Mutator
+                this.age = age;
+            }
+        }
+
+
+    | Aspect               | Normal Method | Abstract Method |
+    | -------------------- | ------------- | --------------- |
+    | Implementation       | Present       | Missing         |
+    | Enforcement          | ❌ Optional   | ✔ Mandatory    |
+    | Design contract      | ❌            | ✔              |
+    | Polymorphism support | Weak          | Strong          |
+    | Compile-time safety  | ❌            | ✔              |
+
+
+    Abstract Method : 
+        An abstract method is a method that:
+            - Is declared using the abstract keyword
+            - Does not have a method body
+            - Specifies what to do, not how to do
+
+        Where Can Abstract Methods Exist?
+
+            ✔ Only inside an abstract class
+            ❌ Cannot be inside a normal (concrete) class
+
+            abstract class Vehicle {
+                abstract void move();
+            }
+
+            class Car extends Vehicle {
+                @Override
+                void move() {
+                    system.out.println("Will move on 4 wheels");
+                }
+            }
+
+            class Bike extends Vehicle {
+                @Override
+                void move() {
+                    system.out.println("Will move on 2 wheels");
+                }
+            }
+            class Auto extends Vehicle {
+                @Override
+                void move() {
+                    system.out.println("Will move on 3 wheels");
+                }
+            }
+
+
+        Rules of Abstract Methods ⚠️
+
+            ✔ Must be declared using abstract
+            ✔ Must not have a body
+            ✔ Subclass must implement all abstract methods    //// if we are extending abstract class then we have to define all the abstract call methods by overiding them
+            ✔ Cannot be private, final, or static
+            ✔ Can have parameters & return type
+
+        Why Do We Use Abstract Methods?
+
+            ✔ Enforce method implementation
+            ✔ Achieve runtime polymorphism
+            ✔ Define common behavior
+            ✔ Follow OCP (Open–Closed Principle)
+        
+        Use abstract methods when:
+
+            ✔ Multiple classes share common behavior
+            ✔ Logic differs per class
+            ✔ You want to force implementation
+            ✔ You are designing a framework / API
+            ✔ You want future-proof code
+
+        Abstract methodsexist so that:
+
+            ✔ Humans don’t forget
+            ✔ Compiler enforces rules
+            ✔ Architecture remains scalable
+
+        # Abstract methods are not about code reuse. They are about design discipline.
+
+        Example : 
+        abstract class Bank {
+            abstract double getInterestRate();
+        }
+
+        class SBI extends Bank {
+            double getInterestRate() {
+                return 6.5;
+            }
+        }
+
+        class HDFC extends Bank {
+            double getInterestRate() {
+                return 7.0;
+            }
+        }
+
+    Can we create object of abstract class?  ---> ❌ NO
+    Can abstract method be overridden? ---> ✔ YES (mandatory)
+    Can abstract method be static? ---> ❌ NO
+    Can abstract class have no abstract methods? ---> ✔ YES
+
+
+    Abstract methods are NOT about making code run.
+    They are about design guarantees.
+
+    Abstract methods exist to ENFORCE A CONTRACT
+
+        Not to store logic.
+        Not to reuse code.
+        But to force correctness at compile time.
+
+        “Any class that claims to be a Shape MUST have an area() method.”
+
+        That’s the only special power abstract methods give.
+
+        Abstract Method = Legal Contract
+        Concrete Method = Actual Implementation
+
+
+
+
 
 
 
