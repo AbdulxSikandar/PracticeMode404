@@ -112,9 +112,9 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
                 double y = x;
      
 ## Java Control Statements :
-    Java complier excute code from top to bottom and execute according to the order they appear.
+Java complier excute code from top to bottom and execute according to the order they appear.
 
-    1. Decision Making Statement:
+1. Decision Making Statement:
         A. If Statement: 
 
                 If (X > 10){
@@ -167,7 +167,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
                 default:
                     System.out.println("Weekend or Off-day")
             }
-    2. Loop Statement :
+2. Loop Statement :
         A. do while loop :
             Useful if we want to execute condition irrespective of true/false then use do - while.
             do {
@@ -198,7 +198,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
                 System.out.println("Number : " + a );
             }
 
-    3. Jump Statement:
+3. Jump Statement:
         A. break
             used to break the loop
             
@@ -272,7 +272,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
 
 
 ## This Keyword : 
-    - The this keyword refers to the current object and is used to access instance variables and methods. It cannot be used in static context.
+The this keyword refers to the current object and is used to access instance variables and methods. It cannot be used in static context.
 
     public class this_class {  
         int a = 5;
@@ -288,7 +288,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
             }
     }
 
-    - The this keyword is used to invoke methods of the current object (instance), not the class.
+The this keyword is used to invoke methods of the current object (instance), not the class.
     
     class Test {
         void show() {
@@ -301,7 +301,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
     }
 
 
-    - Used to invoke constructors of the current class
+Used to invoke constructors of the current class
 
     class Test {
         Test() {
@@ -457,7 +457,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
 
 
 ## Constructor :
-    A constructor is a special method used to initialize objects in Java.
+A constructor is a special method used to initialize objects in Java.
     Key Characteristics
         - Constructor name = Class name
         - No return type (not even void)
@@ -819,7 +819,7 @@ Static, Final, Abstract, Concrete and Singleton Class.
 
 
 # Access Modifier : 
-    Access modifiers control the visibility (scope) of:
+Access modifiers control the visibility (scope) of:
         classes
         variables
         methods
@@ -962,12 +962,12 @@ Common Map Methods :
 
 
 
-    Hashmap Allows one null key and Allows multiple null values
+Hashmap Allows one null key and Allows multiple null values
     When to use Hashmap :
         - When order does NOT matter
         - When performance is important
 
-    LinkedHashMap : 
+LinkedHashMap : 
         - Maintains insertion order
         - Internally uses HashMap + Doubly Linked List
         ✔ Maintains insertion order
@@ -980,7 +980,7 @@ Common Map Methods :
             - When order matters
             - When predictable iteration is needed
 
-    TreeMap : 
+TreeMap : 
         Stores keys in sorted order
         Uses Red-Black Tree
         Sorting is natural or custom
