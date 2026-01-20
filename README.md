@@ -62,7 +62,7 @@
 
 
 
-    Java Variables : 
+Java Variables : 
 
     1. Local Variable
     2. Instance Variable
@@ -115,6 +115,7 @@ Typecasting : Process of changing data type, Useful when we want to perform oper
 Java complier excute code from top to bottom and execute according to the order they appear.
 
 1. Decision Making Statement:
+
         A. If Statement: 
 
                 If (X > 10){
@@ -168,6 +169,7 @@ Java complier excute code from top to bottom and execute according to the order 
                     System.out.println("Weekend or Off-day")
             }
 2. Loop Statement :
+
         A. do while loop :
             Useful if we want to execute condition irrespective of true/false then use do - while.
             do {
@@ -199,6 +201,7 @@ Java complier excute code from top to bottom and execute according to the order 
             }
 
 3. Jump Statement:
+
         A. break
             used to break the loop
             
@@ -941,15 +944,15 @@ Map is an interface in java.util used to store data in key–value pairs.
     System.out.println(map.get(2)); // Banana
 
 
-Common Map Methods : 
-    - put(k,v)	: Add key–value
-    - get(k)	: Get value
-    - remove(k) :	Delete entry
-    - containsKey(k) :	Check key
-    - containsValue(v) :	Check value
-    - keySet() :	Get all keys
-    - values() :	Get all values
-    - entrySet() : Key–value pairs
+    Common Map Methods : 
+        - put(k,v)	: Add key–value
+        - get(k)	: Get value
+        - remove(k) :	Delete entry
+        - containsKey(k) :	Check key
+        - containsValue(v) :	Check value
+        - keySet() :	Get all keys
+        - values() :	Get all values
+        - entrySet() : Key–value pairs
 
         marks.put("Math", 85); // Updates value from 80 → 85
         marks.replace("Science", 78);   
@@ -962,12 +965,13 @@ Common Map Methods :
 
 
 
-Hashmap Allows one null key and Allows multiple null values
+    Hashmap Allows one null key and Allows multiple null values
+    
     When to use Hashmap :
         - When order does NOT matter
         - When performance is important
 
-LinkedHashMap : 
+    LinkedHashMap : 
         - Maintains insertion order
         - Internally uses HashMap + Doubly Linked List
         ✔ Maintains insertion order
@@ -980,7 +984,7 @@ LinkedHashMap :
             - When order matters
             - When predictable iteration is needed
 
-TreeMap : 
+    TreeMap : 
         Stores keys in sorted order
         Uses Red-Black Tree
         Sorting is natural or custom
