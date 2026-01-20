@@ -1,6 +1,3 @@
-# PracticeMode404
-
-
 # JAVA Notes
 
     @Author Name : - [@AbdulxSikandar](https://github.com/AbdulxSikandar)
@@ -930,6 +927,7 @@ Access modifiers control the visibility (scope) of:
 
 # Map
 Map is an interface in java.util used to store data in key–value pairs.
+    
     - Keys are unique
     - Values can be duplicate
     - One key maps to one value
