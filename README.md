@@ -626,6 +626,108 @@ A constructor is a special method used to initialize objects in Java.
         obj.show();
 
 
+        | Aspect                        | Static Method                         | Non-Static (Instance) Method         |
+        | ----------------------------- | ------------------------------------  | ------------------------------------ |
+        | **Definition**                | Method that belongs to the **class**  | Method that belongs to an **object** |
+        | **Keyword**                   | Declared using `static`               | No `static` keyword                  |
+        | **Access**                    | Accessed using **class name**         | Accessed using **object reference**  |
+        | **Object Required**           | ❌ Not required                      | ✔ Required                           |
+        | **Access Static Members**     | ✔ Yes                                | ✔ Yes                                |
+        | **Access Non-Static Members** | ❌ No                                | ✔ Yes                                |
+        | **Binding Time**              | **Compile-time binding**              | **Runtime binding**                  |
+        | **Overriding**                | ❌ Not overridden (Method Hiding)    | ✔ Can be overridden                  |
+        | **Polymorphism**              | ❌ Not supported                     | ✔ Supported                          |
+        | **Memory Allocation**         | Method Area / Metaspace               | Heap (with object)                   |
+        | **Number of Copies**          | One per class                         | One per object                       |
+        | **`this` keyword**            | ❌ Cannot be used                    | ✔ Can be used                        |
+        | **`super` keyword**           | ❌ Cannot be used                    | ✔ Can be used                        |
+        | **Performance**               | Faster (no object lookup)             | Slightly slower                      |
+        | **Main Use Case**             | Utility / helper logic                | Business / object behavior           |
+        | **Example**                   | `Math.max()`                          | `account.withdraw()`                 |
+
+
+
+        Why static methods cannot directly use non-static variables : 
+
+            A static method belongs to the class, while a non-static variable belongs to an object.
+            So inside a static method:
+            There is no object
+
+            class Test {
+                int x = 10;
+
+                static void show() {
+                    System.out.println(x); // ❌ Compile-time error
+                }
+            }
+
+            Error: Cannot make a static reference to a non-static field
+
+            Ways to use a non-static variable inside a static method : 
+
+            1. Create an Object (Most Common & Correct Way)
+
+            class Test {
+                int x = 10;
+
+                static void show() {
+                    Test obj = new Test();   // create object
+                    System.out.println(obj.x);
+                }
+
+                public static void main(String[] args) {
+                    show();
+                }
+            }
+
+            2. Pass Object as a Parameter (Best Design Practice)
+
+            class Test {
+                int x = 10;
+
+                static void show(Test obj) {
+                    System.out.println(obj.x);
+                }
+
+                public static void main(String[] args) {
+                    Test t = new Test();
+                    show(t);
+                }
+            }
+
+            3. Call Static Method from Instance Method (Indirect Access)
+
+            class Test {
+                int x = 10;
+
+                static void show(Test obj) {
+                    System.out.println(obj.x);
+                }
+
+                void call() {
+                    show(this);  // instance method has object
+                }
+
+                public static void main(String[] args) {
+                    Test t = new Test();
+                    t.call();
+                }
+            }
+
+            
+
+            ❌ Using this in static method
+
+            static void show() {
+                System.out.println(this.x); // ❌ ERROR
+            }
+
+
+            ❌ Accessing instance variable directly
+            static void show() {
+                System.out.println(x); // ❌ ERROR
+            }
+
     Method Overloading (Compile-Time Polymorphism) : 
 
         Same method name, different parameters.
@@ -812,6 +914,84 @@ A constructor is a special method used to initialize objects in Java.
         Abstract Method = Legal Contract
         Concrete Method = Actual Implementation
 
+
+# Binding in Java : 
+    
+    Binding is the process of linking a method call with its actual method implementation.
+
+    In simple words:
+    Which method will be executed when a method is called is called binding.
+
+    🔹 Why Binding Is Important?
+
+        ✔ Enables polymorphism
+        ✔ Decides method execution at compile time or runtime
+        ✔ Core concept of OOP
+
+    ⭐ Types of Binding :
+
+    Java has two types of binding:
+        - Static Binding / Compile-time binding
+        - Dynamic Binding / Runtime binding
+
+    Static Binding (Compile-Time Binding) : 
+
+        Binding that happens at compile time. The method call is resolved based on reference type, not object type.
+        When Static Binding Happens?
+            ✔ Method is static
+            ✔ Method is final
+            ✔ Method is private
+            ✔ Method overloading
+
+        class Parent {
+            static void show() {
+                System.out.println("Parent static");
+            }
+        }
+
+        class Child extends Parent {
+            static void show() {
+                System.out.println("Child static");
+            }
+        }
+
+        Parent p = new Child();
+        p.show();    // Parent static
+
+
+
+    Dynamic Binding (Runtime Binding) : 
+
+        Binding that happens at runtime. The method call is resolved based on object type, not reference type.
+        When Dynamic Binding Happens?
+            ✔ Method is non-static
+            ✔ Method is overridden
+
+        class Parent {
+            void show() {
+                System.out.println("Parent instance");
+            }
+        }
+
+        class Child extends Parent {
+            @Override
+            void show() {
+                System.out.println("Child instance");
+            }
+        }
+        
+        Parent p = new Child();
+        p.show();    // Child instance
+
+
+
+        | Feature               | Static Binding         | Dynamic Binding             |
+        | --------------------- | ---------------------- | --------------------------- |
+        | Binding Time          | Compile time           | Runtime                     |
+        | Decided by            | Reference type         | Object type                 |
+        | Supports Polymorphism | ❌ No                  | ✔ Yes                       |
+        | Method Types          | static, final, private | Overridden instance methods |
+        | Performance           | Faster                 | Slightly slower             |
 
 
 
