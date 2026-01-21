@@ -8,6 +8,7 @@ public class TwoSumProblem {
         int[] arr = {1,2,3,5,7,9,11,15};
         System.out.println("Sum of 2 numbers from Array : ");
         int Sum = sc.nextInt();
+        sc.close();
         TwoSumProblem ts = new TwoSumProblem();
         ts.exactsumoftwo(arr, Sum);
     }
