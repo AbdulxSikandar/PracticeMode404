@@ -21,7 +21,8 @@ public class TwoSumProblem {
         while (x < y) {
             if((a[x]+a[y] == sum)){
                 System.out.println( "These are the elements "+a[x]+", "+a[y]+" which has sum : "+sum);
-                break;
+                x++;
+                y++;
             } else if((a[x]+a[y] < sum)){
                 x ++; 
             }else if((a[x]+a[y] > sum)){
