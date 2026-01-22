@@ -3,7 +3,7 @@ package ProblemQuestion;
 public class MinMaxofArray {
     public static void main(String[] args) {
         int[] a = { 6,2,13,5,11,7,9,15};
-        int [] p = {};
+        //int [] p = {};
         MinMaxofArray mm = new MinMaxofArray();
         mm.minmax(a);
     }
