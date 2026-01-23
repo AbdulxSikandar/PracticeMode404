@@ -70,7 +70,7 @@ Feel free to ⭐ or fork if you're learning Java too!
 ## 🛠️ Tools & Environment
 
 - **Language**: Java (OpenJDK)
-- **IDE**: IntelliJ IDEA / VS Code + Java extensions
+- **IDE**: VS Code + Java extensions
 - **Version Control**: Git + GitHub
 
 ## 📅 Next Goals
