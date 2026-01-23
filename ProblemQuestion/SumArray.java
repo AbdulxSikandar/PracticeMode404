@@ -1,5 +1,5 @@
-
-public class AvgArray {
+package ProblemQuestion;
+public class SumArray {
     public static void main(String [] args){
         int [] sumArr = {12,41,78,25,13,5};
 
@@ -7,11 +7,7 @@ public class AvgArray {
         for (int i : sumArr){
             sum_of_arr += i;
         }
-
-        double avg_of_array = (double) sum_of_arr/sumArr.length;
-
-        System.out.println("Avg of Array Elements : " + avg_of_array);
+        System.out.println("Sum of Array Elements : " + sum_of_arr);
     }
     
 }
-

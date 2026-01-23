@@ -1,3 +1,4 @@
+package ProblemQuestion;
 import java.util.Scanner;
 
 public class OddNumbers {

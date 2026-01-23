@@ -1,5 +1,6 @@
 
-public class JavaSource {
+package ProblemQuestion;
+public class AscArray {
     public static void main(String[] args) {
         int[] arr = {1,5,7,6,2,7,9,11,4,15,21,3,8,10};
         System.out.print("Original Array : ");
@@ -9,7 +10,7 @@ public class JavaSource {
         int temp = 0;
         for (int a=0; a< arr.length; a++){
             for(int b = a+1;b<arr.length; b++ ){
-                if(arr[b]> arr[a]){
+                if(arr[b]< arr[a]){
                     temp = arr[a];
                     arr[a] = arr[b];
                     arr[b] = temp; 
@@ -17,7 +18,7 @@ public class JavaSource {
             }
         }
         System.out.println();
-        System.out.print("Descending Array : ");
+        System.out.print("Ascending Array : ");
         for ( int i = 0; i < arr.length;i++ ){
             System.out.print(arr[i]+" ");
         }
