@@ -126,3 +126,13 @@ public class RotateArrayKsteps {
     }
 
 }
+
+/*
+
+| Method          |  Time    |      Space               |
+| --------------- | -------- |------------------------- |
+| moveZerosatEnd  |  O(n)    |  O(n) (extra temp array) |
+| moveZeroinPlace |  O(n)    |  O(1) (in-place)         |
+
+
+*/
