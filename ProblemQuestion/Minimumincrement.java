@@ -23,13 +23,13 @@ public class Minimumincrement {
                 max = x[m];
             }
         }
-        boolean setincreament = false;
+        
         for(int i = 0; i<n ; i++){
             if((max-x[i])%k==0){
                 numberofOperations+= (max-x[i])/k;
-                setincreament = true;
+            
             }else{
-                setincreament = false;
+               
                 numberofOperations = -1;
                 break;
             }
