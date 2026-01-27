@@ -433,6 +433,11 @@
                 | ------------ | -------------------- | ------------ |
                 | Compile-time | Static Polymorphism  | Compile time |
                 | Runtime      | Dynamic Polymorphism | Runtime      |
+
+
+            👉 Overloading is compile-time polymorphism because the method call is resolved by the compiler based on parameters.
+
+            👉 Overriding is runtime polymorphism because the JVM decides which method to execute based on the actual object at runtime.
             
             1️⃣ Compile-Time Polymorphism (Method Overloading) : 
 
