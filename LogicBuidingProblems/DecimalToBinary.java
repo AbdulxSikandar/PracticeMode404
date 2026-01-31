@@ -2,7 +2,7 @@ package LogicBuidingProblems;
 
 public class DecimalToBinary{
     public static void main(String[] args) {
-        System.out.println(dectoBinary(12));
+        System.out.println(dectoBinary(15));
         
     }
     static String dectoBinary(int n){
@@ -11,7 +11,7 @@ public class DecimalToBinary{
 
         while (n>0){
             int bit = n%2;
-            binary.append((char)('0'+ bit));
+            binary.append(bit);
             n /=2;
         }
 
