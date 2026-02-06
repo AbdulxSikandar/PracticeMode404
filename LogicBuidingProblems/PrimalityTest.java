@@ -3,7 +3,7 @@ package LogicBuidingProblems;
 public class PrimalityTest {
     public static void main(String[] args) {
         checkPrime(1043);
-        System.out.println(checkPrime(4));
+        System.out.println(checkPrime(2));
     }
     static boolean checkPrime(int x){
         if(x<=1){
