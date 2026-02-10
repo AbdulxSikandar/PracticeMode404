@@ -1,5 +1,4 @@
 package LeetCode;
-import java.util.*;
 /*
 An ugly number is a positive integer which does not have a prime factor other than 2, 3, and 5.
 
