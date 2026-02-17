@@ -1,8 +1,7 @@
-package ArrayProblems;
+package LogicBuidingProblems;
 import java.util.HashMap;
 
-public class UniqueNumber{
-
+public class UniqueElement {
     public static void main(String[] args){
         int[] arr = {1,2,1,2,3,5,6,5,6};
         uniqueamongDuplicate(arr);
@@ -27,6 +26,7 @@ public class UniqueNumber{
             }
         }
     }
+    
 }
 
 /*
@@ -35,3 +35,5 @@ public class UniqueNumber{
 | HashMap  | O(n) | O(n)   |
 | XOR      | O(n) | O(1)   |
 */
+    
+
