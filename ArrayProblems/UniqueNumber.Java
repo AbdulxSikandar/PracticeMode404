@@ -34,6 +34,4 @@ public class UniqueNumber{
 | -------- | ---- | ------ |
 | HashMap  | O(n) | O(n)   |
 | XOR      | O(n) | O(1)   |
-
-
 */
