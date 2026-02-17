@@ -26,9 +26,8 @@ public class UniqueElement {
             }
         }
     }
-    
-}
 
+}
 /*
 | Approach | Time | Space  |
 | -------- | ---- | ------ |
